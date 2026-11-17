@@ -136,17 +136,18 @@ def LoadAllCharcters(file_path="players.json"):
 if __name__ == "__main__":
     #Running directly
     harold = PlayerCharacter("Harold")
-    print(f"harold rolls: {harold}")
-    harold.load_from_json("Harold")
-    print(f"harold load: {harold}")
-    harold.current_hp = (10)
+    #print(f"harold rolls: {harold}")
+    #harold.load_from_json("Harold")
+    #print(f"harold load: {harold}")
+    #harold.current_hp = (10)
     harold.save_to_json()
 
 
-    #gorak = PlayerCharacter("Gorak")
-   #print(f"Gorak Rolls: {gorak}")
-    #gorak.load_from_json("gorak")
-    #print(f"Gorak Load: {gorak}")
-    #gorak.current_hp = 10
+    gorak = PlayerCharacter("Gorak")
+    print(f"Gorak Rolls: {gorak}")
+    gorak.load_from_json("gorak")
+    print(f"Gorak Load: {gorak}")
+    gorak.current_hp = 10
+    gorak.save_to_json
         
            
